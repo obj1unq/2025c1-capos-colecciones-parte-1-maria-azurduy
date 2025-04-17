@@ -4,6 +4,7 @@ object rolando {
     const historial = [] // se desea saber el orden en que fue encontrado
     var capacidad = 2
     const morada = castillo
+    var property poderBase = 100 //entiende setter and getter 
 
     method incrementarCapacidad(cantidad){
         capacidad += cantidad
@@ -37,14 +38,32 @@ object rolando {
         artefactos.clear()
     }
 
+    method poder(){
+        return poderBase
+
+    }
+
 }
 
-object collar {}
-object espada {}
+object collar {
+    method poder()
 
-object libro {}
+}
+object espada {
+    method poder()
 
-object armadura {}
+
+}
+
+object libro {
+    method poder()
+
+}
+
+object armadura {
+    method poder
+
+}
 
 
 object castillo {
